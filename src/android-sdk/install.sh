@@ -22,7 +22,7 @@ if [ -n "$EXTRA_PACKAGES" ]; then
 fi
 
 DEBIAN_FRONTEND="noninteractive" sudo apt update &&
-    sudo apt install --no-install-recommends -y openjdk-17-jdk-headless unzip wget usbutils &&
+    sudo apt install --no-install-recommends -y unzip wget usbutils &&
     apt clean
 
 # Prepare install folder.
