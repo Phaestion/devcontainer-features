@@ -47,19 +47,10 @@ cd $ANDROID_HOME
 
 export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
 
-# Save original JAVA_HOME.
-OG_JAVA_HOME=$JAVA_HOME
-
-# thanks https://askubuntu.com/questions/772235/how-to-find-path-to-java#comment2258200_1029326.
-export JAVA_HOME=$(dirname $(dirname $(update-alternatives --list javac 2>&1 | head -n 1)))
-
 # TODO: Update everything to future-proof for the link getting stale.
 # yes | sdkmanager "cmdline-tools;latest"
 # Download the platform tools.
 yes | sdkmanager "${PACKAGES[@]}"
-
-# Restore JAVA_HOME.
-export JAVA_HOME=$OG_JAVA_HOME
 
 # Make sure the Android SDK has the correct permissions.
 sudo chown -R "$_REMOTE_USER:$_REMOTE_USER" "$ANDROID_HOME"

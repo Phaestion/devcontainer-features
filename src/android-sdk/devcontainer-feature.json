@@ -30,5 +30,5 @@
             "description": "extra packages, split by space"
         }
     },
-    "installsAfter": ["ghcr.io/devcontainers/features/common-utils", "ghcr.io/akhildevelops/devcontainer-features/apt"]
+    "installsAfter": ["ghcr.io/devcontainers/features/common-utils", "ghcr.io/akhildevelops/devcontainer-features/apt", "ghcr.io/devcontainers/features/java:1"]
 }
