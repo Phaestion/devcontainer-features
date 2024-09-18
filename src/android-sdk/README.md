@@ -7,7 +7,7 @@ Install Android SDK `cmdline-tools`, `platform-tools`, and, `build-tools`.
 
 ```json
 "features": {
-    "ghcr.io/NordcomInc/devcontainer-features/android-sdk:1": {}
+    "ghcr.io/Phaestion/devcontainer-features/android-sdk:1": {}
 }
 ```
 
@@ -24,4 +24,4 @@ Install Android SDK `cmdline-tools`, `platform-tools`, and, `build-tools`.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/NordcomInc/devcontainer-features/blob/main/src/android-sdk/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/Phaestion/devcontainer-features/blob/main/src/android-sdk/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
